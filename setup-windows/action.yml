@@ -5,8 +5,12 @@ description: >
         checking out sources.
 inputs:
   arch:
-    description: 'Host Arch'
+    description: 'Target Arch'
     required: true
+  host_arch:
+    description: 'Host Arch for cross-compilation'
+    required: false
+
 runs:
   using: 'node16'
   main: main.js
